@@ -16,6 +16,8 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
 
 \mode<presentation> {
 	
@@ -83,14 +85,15 @@
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[Short title]{Full Title of the Talk} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[Certificaciones de gestión de proyectos]{Certificaciones de gestión de proyectos \\ Introducción al PMBOK} % The short title appears at the bottom of every slide, the full title is only on the title page
 
-\author{John Smith} % Your name
-\institute[UCLA] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+\author[]{Javier Barbero Gómez \\ Aurora Esteban Toscano \\ Carlos Gómez Pino \\ Francisco Jesús Jiménez Álvarez} % Your name
+\institute[Universidad de Córdoba] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
-	University of California \\ % Your institution for the title page
+	Universidad de Córdoba \\ % Your institution for the title page
+	Grado en Ingeniería Informática \\
+	Proyectos
 	\medskip
-	\textit{john@smith.com} % Your email address
 }
 \date{\today} % Date, can be changed to a custom date
 
@@ -100,7 +103,11 @@
 		\titlepage % Print the title page as the first slide
 	\end{frame}
 	
-	%\input{javi.tex}
+	\begin{frame}
+		\tableofcontents
+	\end{frame}
+	
+	\input{javi.tex}
 	%\input{aurora.tex}
 	%\input{carlos.tex}
 	%\input{francisco.tex}
