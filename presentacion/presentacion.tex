@@ -76,6 +76,9 @@
 	%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
 	
 	%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+
+	% Números arábicos para framebreaks
+	\setbeamertemplate{frametitle continuation}{(\insertcontinuationcount)}
 }
 
 \usepackage{graphicx} % Allows including images
@@ -99,6 +102,14 @@
 
 \newcommand{\foreign}[1]{\textit{#1}}
 
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Contenidos}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
 \begin{document}
 	
 	\begin{frame}
@@ -110,8 +121,8 @@
 	\end{frame}
 	
 	\input{javi.tex}
-	%\input{aurora.tex}
-	%\input{carlos.tex}
+	\input{aurora.tex}
+	\input{carlos.tex}
 	\input{francisco.tex}
 	
 \end{document} 
